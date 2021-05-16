@@ -1,14 +1,14 @@
 {
   "name": "utcs",
-  "version": "3.0.8",
+  "version": "3.0.9",
   "description": "gets utc and local hours and minutes in seconds",
-  "main": "bin/index.js",
+  "main": "bin/utcs.js",
   "scripts": {
-    "test": "node index.js"
+    "test": "node utcs.js"
   },
   "bin": {
-    "utcs": "./bin/index.js",
-    "localtime": "./bin/local.js"
+    "utcs": "./bin/utcs.js",
+    "local": "./bin/local.js"
   },
   "keywords": [
     "utc or local time in seconds"
@@ -18,5 +18,8 @@
   "repository": {
     "type": "git",
     "url": "git@github.com:kiriti999/utcInSeconds.git"
+  },
+  "dependencies": {
+    "utcs": "^3.0.8"
   }
 }
