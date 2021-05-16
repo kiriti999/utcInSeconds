@@ -1,6 +1,6 @@
 {
   "name": "utcs",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "description": "gets utc and local hours and minutes in seconds",
   "main": "bin/utcs.js",
   "scripts": {

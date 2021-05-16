@@ -1,6 +1,21 @@
 #!/usr/bin/env node
 
-const args = process.argv.slice(2);
+let args = process.argv.slice(2);
+
+if (args && args.length > 1) {
+    console.log(`Limit number of args to 1`);
+    return;
+}
+
+if (args && args.length == 1) {
+    const pattern = /^\d+$/;
+    const isDigit = pattern.test(parseInt(args[0], 10));
+    if (!isDigit) {
+        console.log(`Invalid argument type. Please enter only numbers`);
+        return;
+    }
+}
+
 
 /* #region  UTCS */
 function utcs(num) {
