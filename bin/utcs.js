@@ -57,7 +57,6 @@ local(args[0] || 0);
 /* #endregion */
 
 module.exports = {
-    utcs,
-    local
+    utcs
 };
 

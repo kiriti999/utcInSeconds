@@ -1,6 +1,6 @@
 {
   "name": "utcs",
-  "version": "3.0.9",
+  "version": "4.0.0",
   "description": "gets utc and local hours and minutes in seconds",
   "main": "bin/utcs.js",
   "scripts": {
@@ -17,8 +17,5 @@
   "repository": {
     "type": "git",
     "url": "git@github.com:kiriti999/utcInSeconds.git"
-  },
-  "dependencies": {
-    "utcs": "^3.0.9"
   }
 }
