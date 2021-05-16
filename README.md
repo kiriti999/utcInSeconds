@@ -12,7 +12,7 @@ Accepts a single optional argument (number) to add utc/local minutes to time.
 **Example:**
 ```sh
 $ Run command utcs to get utc time and time in seconds
-$ Run command utcs 1 or local 1 where 1 stands for additional minute to be added
+$ Run command utcs 1 where 1 stands for additional minute to be added
 ```
 License
 ----
