@@ -7,8 +7,7 @@
     "test": "node utcs.js"
   },
   "bin": {
-    "utcs": "./bin/utcs.js",
-    "local": "./bin/local.js"
+    "utcs": "./bin/utcs.js"
   },
   "keywords": [
     "utc or local time in seconds"
@@ -20,6 +19,6 @@
     "url": "git@github.com:kiriti999/utcInSeconds.git"
   },
   "dependencies": {
-    "utcs": "^3.0.8"
+    "utcs": "^3.0.9"
   }
 }
