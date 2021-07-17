@@ -1,6 +1,6 @@
 {
   "name": "utcs",
-  "version": "4.0.4",
+  "version": "4.0.5",
   "description": "Simple program to convert utc or local time(HH:MM:SS) to seconds",
   "main": "bin/utcs.js",
   "scripts": {
