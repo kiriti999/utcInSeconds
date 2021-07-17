@@ -1,7 +1,7 @@
 {
   "name": "utcs",
-  "version": "4.0.3",
-  "description": "gets utc and local hours and minutes in seconds",
+  "version": "4.0.4",
+  "description": "Simple program to convert utc or local time(HH:MM:SS) to seconds",
   "main": "bin/utcs.js",
   "scripts": {
     "test": "node utcs.js"

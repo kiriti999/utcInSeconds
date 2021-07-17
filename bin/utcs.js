@@ -11,23 +11,33 @@ if (args && args.length == 1) {
     const pattern = /^\d+$/;
     const isDigit = pattern.test(parseInt(args[0], 10));
     if (!isDigit) {
-        console.log(`Invalid argument type. Please enter only numbers`);
+        console.log(`Invalid argument type. Please enter only positive number`);
         return;
     }
 }
 
 
 /* #region  UTCS */
+
+function prefixZero(hms) {
+    let prefixed = {};
+    hms.forEach(item => {
+        prefixed[item] = item < 10 ? `0${item}` : item
+    });
+    return prefixed;
+}
 function utcs(num) {
     let hours = new Date().getUTCHours();
     let minutes = new Date().getUTCMinutes();
     let seconds = new Date().getUTCSeconds();
-    let utcTime = `${hours}:${minutes}:${seconds}`;
+    const prefixed = prefixZero([hours, minutes, seconds]);
+    let utcTime = `${prefixed[hours]}:${prefixed[minutes]}:${prefixed[seconds]}`;
     let utcSeconds = (+hours) * 60 * 60 + (+minutes) * 60 + (+seconds);
 
     if (num) {
         minutes = (minutes + parseInt(num, 10));
-        utcTime = `${hours}:${minutes}:${seconds}`;
+        const prefixed = prefixZero([hours, minutes, seconds]);
+        utcTime = `${prefixed[hours]}:${prefixed[minutes]}:${prefixed[seconds]}`;
         utcSeconds = (+hours) * 60 * 60 + (+minutes) * 60 + (+seconds);
     }
     console.log(`  utc time:: ${utcTime}, seconds:: ${utcSeconds}`);
@@ -46,7 +56,8 @@ function msToTime(duration) {
     hours = (hours < 10) ? '0' + hours : hours;
     minutes = (minutes < 10) ? '0' + minutes : minutes;
     seconds = (seconds < 10) ? '0' + seconds : seconds;
-    return hours + ':' + minutes + ':' + seconds;
+    const prefixed = prefixZero([hours, minutes, seconds]);
+    return `${prefixed[hours]}:${prefixed[minutes]}:${prefixed[seconds]}`;
 }
 
 function timeToMs(time) {
