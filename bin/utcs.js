@@ -10,10 +10,10 @@ if (args && args.length > 1) {
 
 // Validation to argument type and positive integer
 if (args && args.length == 1) {
-    const pattern = /^\d+$/;
+    const pattern = /^-?\d*\.?\d+$/;
     const isDigit = pattern.test(parseInt(args[0], 10));
     if (!isDigit) {
-        console.log(`Invalid argument type. Please enter only positive number`);
+        console.log(`Invalid argument type. Please enter only numbers`);
         return;
     }
 }

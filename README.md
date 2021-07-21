@@ -17,12 +17,12 @@ $ npm install utcs -g
 
 * **Run `utcs` in terminal:**
 
-        utc time:: 5:9:11, seconds:: 18551
+        utc time:: 05:09:11, seconds:: 18551
         local time:: 10:39:11, seconds:: 38351
 
 * **Run `utcs 5` in terminal (where number 5 is additional 5mins added):**
 
-        utc time:: 5:18:27, seconds:: 19107
+        utc time:: 05:18:27, seconds:: 19107
         local time:: 10:48:27, seconds:: 38907
 License
 ----
